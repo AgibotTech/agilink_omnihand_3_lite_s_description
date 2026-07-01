@@ -1,14 +1,23 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.8)
+project(h3l_s_description)
+if(CMAKE_COMPILE_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+	add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-project(agile2-lite-T1-0508_URDF)
+find_package(ament_cmake REQUIRED)
 
-find_package(catkin REQUIRED)
+install(DIRECTORY
+	urdf
+	meshes
+	launch
+	rviz
+	DESTINATION share/${PROJECT_NAME}
+)
 
-catkin_package()
+if(BUILD_TESTING)
+	find_package(ament_lint_auto REQUIRED)
+	ament_lint_auto_find_test_dependencies()
+endif()
 
-find_package(roslaunch)
+ament_package()
 
-foreach(dir config launch meshes urdf)
-	install(DIRECTORY ${dir}/
-		DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
-endforeach(dir)
