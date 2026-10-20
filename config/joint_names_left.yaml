@@ -1,0 +1,8 @@
+joint_names:
+  - thumb_abad_joint
+  - thumb_pip_joint
+  - thumb_dip_joint
+  - index_pip_joint
+  - index_dip_joint
+  - M_R_P_pip_joint
+  - M_R_P_dip_joint

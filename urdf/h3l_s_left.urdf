@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="h3l_s_left">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.00256105149113 -0.000491185159052 0.0417808231825" rpy="0 0 0" />
+      <mass value="0.104396002995242" />
+      <inertia ixx="7.35063321069175E-05" ixy="-8.0815172606e-07" ixz="3.67060308124331E-07" iyy="5.04749222288858E-05" iyz="-2.2273673366e-06" izz="3.4618438790983E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.01" rpy="0 0 -1.57079632679" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/palm.STL" scale="1 -1 1" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.01" rpy="0 0 -1.57079632679" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/palm.STL" scale="1 -1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="thumb_abad_link">
+    <inertial>
+      <origin xyz="1.41194186726e-07 -0.00673304501366 -0.000118528176289" rpy="0 0 0" />
+      <mass value="0.00817944714965318" />
+      <inertia ixx="5.62832810958956E-07" ixy="5.29423602594e-12" ixz="-9.7198186135836E-12" iyy="4.50760129676355E-07" iyz="9.50097141191e-10" izz="4.24457204569121E-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/thumb_abad_link.STL" scale="1 -1 1" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/thumb_abad_link.STL" scale="1 -1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="thumb_abad_joint" type="revolute">
+    <origin xyz="0.0050567 -0.019112 0.033695" rpy="-0.17469 0.17188 0.77013" />
+    <parent link="base_link" />
+    <child link="thumb_abad_link" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-0.767944870878" upper="0.802851455917" effort="0" velocity="0" />
+  </joint>
+  <link name="thumb_pip_link">
+    <inertial>
+      <origin xyz="0.0194332718101 -0.00102176747751 -8.34054239653e-05" rpy="0 0 0" />
+      <mass value="0.00778724480307474" />
+      <inertia ixx="3.87192854774449E-07" ixy="-1.4275691799e-07" ixz="7.5591285908183E-09" iyy="1.04714479443049E-06" iyz="2.28034656983e-10" izz="1.02766015470045E-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/thumb_pip_link.STL" scale="1 -1 1" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.866666666666667 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/thumb_pip_link.STL" scale="1 -1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="thumb_pip_joint" type="revolute">
+    <origin xyz="0 -0.020059 0.0040921" rpy="1.5708 0 -1.5708" />
+    <parent link="thumb_abad_link" />
+    <child link="thumb_pip_link" />
+    <axis xyz="0.00019056 0 1" />
+    <limit lower="0" upper="1.16937059884" effort="0" velocity="0" />
+  </joint>
+  <link name="thumb_dip_link">
+    <inertial>
+      <origin xyz="0.0122493780484 -0.00147512265219 1.29376623078e-05" rpy="0 0 0" />
+      <mass value="0.011105504230452" />
+      <inertia ixx="3.1696493619624E-07" ixy="4.98636934647e-08" ixz="3.18167727992834E-09" iyy="5.9596711508724E-07" iyz="1.06702335003e-09" izz="6.21411622832337E-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/thumb_dip_link.STL" scale="1 -1 1" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.866666666666667 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/thumb_dip_link.STL" scale="1 -1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="thumb_dip_joint" type="revolute">
+    <origin xyz="0.035825 0.0035462 -1.0649e-05" rpy="6.2131e-05 0.00018015 0.33211" />
+    <parent link="thumb_pip_link" />
+    <child link="thumb_dip_link" />
+    <axis xyz="0 0 1" />
+    <mimic joint="thumb_pip_joint" multiplier="1.19402985075" offset="0" />
+    <limit lower="0" upper="1.3962634016" effort="0" velocity="0" />
+  </joint>
+  <link name="index_pip_link">
+    <inertial>
+      <origin xyz="-0.0023969158658 -4.41495767487e-05 0.0188977458377" rpy="0 0 0" />
+      <mass value="0.0124758222571043" />
+      <inertia ixx="1.52943879270123E-06" ixy="-6.99386022527e-11" ixz="-1.73014871531302E-07" iyy="1.50518472742414E-06" iyz="7.87896552573e-09" izz="5.32374497457546E-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/index_pip_link.STL" scale="1 -1 1" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.866666666666667 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/index_pip_link.STL" scale="1 -1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="index_pip_joint" type="revolute">
+    <origin xyz="0.0024041 -0.024 0.08094" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="index_pip_link" />
+    <axis xyz="0 1 0" />
+    <limit lower="0" upper="1.3962634016" effort="0" velocity="0" />
+  </joint>
+  <link name="index_dip_link">
+    <inertial>
+      <origin xyz="0.00280422326272 1.29312565836e-05 0.0120149730388" rpy="0 0 0" />
+      <mass value="0.0111055017509101" />
+      <inertia ixx="5.953692421021E-07" ixy="2.09027855703e-09" ixz="-5.14876853266367E-08" iyy="6.21405317406172E-07" iyz="2.62344946767e-09" izz="3.1755849668924E-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/index_dip_link.STL" scale="1 -1 1" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.866666666666667 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/index_dip_link.STL" scale="1 -1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="index_dip_joint" type="revolute">
+    <origin xyz="0.0035474 0 0.035825" rpy="0 0 0" />
+    <parent link="index_pip_link" />
+    <child link="index_dip_link" />
+    <axis xyz="0 1 0" />
+    <mimic joint="index_pip_joint" multiplier="1.0625" offset="0" />
+    <limit lower="0" upper="1.4835298642" effort="0" velocity="0" />
+  </joint>
+  <link name="M_R_P_pip_link">
+    <inertial>
+      <origin xyz="-0.00229553527317 0.0160481236505 0.0185534611134" rpy="0 0 0" />
+      <mass value="0.0380398660098398" />
+      <inertia ixx="4.65481490513224E-06" ixy="-5.59988891075e-13" ixz="-5.01566844761889E-07" iyy="4.58622439556586E-06" iyz="3.70874680071e-11" izz="1.59455833800968E-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/m_r_p_pip_link.STL" scale="1 -1 1" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.866666666666667 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/m_r_p_pip_link.STL" scale="1 -1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="M_R_P_pip_joint" type="revolute">
+    <origin xyz="0.0024043 -0.008 0.080941" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="M_R_P_pip_link" />
+    <axis xyz="0 1 0" />
+    <limit lower="0" upper="1.3962634016" effort="0" velocity="0" />
+  </joint>
+  <link name="M_R_P_dip_link">
+    <inertial>
+      <origin xyz="0.0030065360461 0.0140144146644 0.0122924148361" rpy="0 0 0" />
+      <mass value="0.0336132823558457" />
+      <inertia ixx="1.88280710409276E-06" ixy="6.36551025465e-09" ixz="-1.97320110552244E-07" iyy="1.98575261546775E-06" iyz="7.91250948974e-09" izz="9.83652758401805E-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/m_r_p_dip_link.STL" scale="1 -1 1" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.866666666666667 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://h3l_s_description/meshes/left/m_r_p_dip_link.STL" scale="1 -1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="M_R_P_dip_joint" type="revolute">
+    <origin xyz="0.0035475 0 0.035825" rpy="0 0 0" />
+    <parent link="M_R_P_pip_link" />
+    <child link="M_R_P_dip_link" />
+    <axis xyz="0 1 0" />
+    <mimic joint="M_R_P_pip_joint" multiplier="1.0625" offset="0" />
+    <limit lower="0" upper="1.4835298642" effort="0" velocity="0" />
+  </joint>
+</robot>

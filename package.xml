@@ -4,22 +4,19 @@
 <package format="3">
   <name>h3l_s_description</name>
   <version>1.0.0</version>
-  <description>URDF description for H3L robot hand</description>
+  <description>URDF, meshes and visualization launch files for the H3L-S hand.</description>
   <maintainer email="wujunxiao@agibot.com">Junxiao Wu</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <depend>urdf</depend>
-  <depend>xacro</depend>
-
-
+  <exec_depend>ament_index_python</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>joint_state_publisher</exec_depend>
   <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
   <exec_depend>rviz2</exec_depend>
 
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
   <export>
     <build_type>ament_cmake</build_type>
   </export>

@@ -65,12 +65,12 @@ Visualization Manager:
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
-        Index_dip_Link:
+        index_dip_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        Index_pip_Link:
+        index_pip_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -86,22 +86,22 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        Thumb_dip_link:
+        thumb_dip_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        Thumb_pip_link:
+        thumb_pip_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        palm_link:
+        base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        thumb_abad_Link:
+        thumb_abad_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -121,21 +121,21 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        Index_dip_Link:
+        index_dip_link:
           Value: false
-        Index_pip_Link:
+        index_pip_link:
           Value: false
         M_R_P_dip_Link:
           Value: false
         M_R_P_pip_Link:
           Value: false
-        Thumb_dip_link:
+        thumb_dip_link:
           Value: false
-        Thumb_pip_link:
+        thumb_pip_link:
           Value: false
-        palm_link:
+        base_link:
           Value: false
-        thumb_abad_Link:
+        thumb_abad_link:
           Value: false
       Marker Scale: 1
       Name: TF
@@ -143,23 +143,23 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        palm_link:
-          Index_pip_Link:
-            Index_dip_Link:
+        base_link:
+          index_pip_link:
+            index_dip_link:
               {}
           M_R_P_pip_Link:
             M_R_P_dip_Link:
               {}
-          thumb_abad_Link:
-            Thumb_pip_link:
-              Thumb_dip_link:
+          thumb_abad_link:
+            thumb_pip_link:
+              thumb_dip_link:
                 {}
       Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: palm_link
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
