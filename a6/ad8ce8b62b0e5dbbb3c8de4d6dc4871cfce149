@@ -1,0 +1,60 @@
+urdf/h3l_s_left.urdf
+  s_62d7f790ba05bc::t_b4d184a80efbb0 5-7,27-29,48,51-52,56-58,81,85-87,111,115-117,140,144-146,170,174-176,199,203-205,229
+urdf/h3l_s_right.urdf
+  s_62d7f790ba05bc::t_2481a0b96e7fc8 14,16-21,54,56-61,92,98,100-103,112,114-119,160-161,170,172-177,223,232,234-239,280-281,290,292-297,343,352,354-359,400-401,410,412-417,463
+---
+{
+  "schema_version": "authorship/3.1.0",
+  "tlab_version": "0.14.2",
+  "base_commit_sha": "a6ad8ce8b62b0e5dbbb3c8de4d6dc4871cfce149",
+  "prompts": {},
+  "sessions": {
+    "s_62d7f790ba05bc": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b947-618f-72f1-be20-c6e2c733b4b5",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "xuqigui <xuqigui@agibot.com>",
+      "custom_attributes": {
+        "tlab.session_started_at": "2026-11-08T03:50:32Z",
+        "tlab.token_usage.output_tokens": "2562270",
+        "tlab.token_usage.cache_read_tokens": "633739148",
+        "tlab.token_usage.input_tokens": "13795446",
+        "tlab.token_usage.cache_creation_tokens": "0"
+      }
+    }
+  },
+  "changes": [
+    {
+      "old_path": "urdf/h3l_s_left.urdf",
+      "new_path": "urdf/h3l_s_left.urdf",
+      "additions": {
+        "ai": [
+          {
+            "session_id": "s_62d7f790ba05bc",
+            "lines": 33
+          }
+        ]
+      },
+      "deletions": {
+        "human": 33
+      }
+    },
+    {
+      "old_path": "urdf/h3l_s_right.urdf",
+      "new_path": "urdf/h3l_s_right.urdf",
+      "additions": {
+        "ai": [
+          {
+            "session_id": "s_62d7f790ba05bc",
+            "lines": 71
+          }
+        ]
+      },
+      "deletions": {
+        "human": 71
+      }
+    }
+  ]
+}
