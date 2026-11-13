@@ -1,0 +1,26 @@
+README.md
+  h_b60f00b173c94b 1,3
+---
+{
+  "schema_version": "authorship/3.1.0",
+  "tlab_version": "0.14.2",
+  "base_commit_sha": "c714256bde11834d7740e00a7c20116042d99627",
+  "prompts": {},
+  "humans": {
+    "h_b60f00b173c94b": {
+      "author": "xuqigui <xuqigui@agibot.com>"
+    }
+  },
+  "changes": [
+    {
+      "old_path": "README.md",
+      "new_path": "README.md",
+      "additions": {
+        "human": 2
+      },
+      "deletions": {
+        "human": 2
+      }
+    }
+  ]
+}
