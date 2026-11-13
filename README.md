@@ -1,6 +1,6 @@
-# H3L-S description
+# OmniHand 3 Lite S description
 
-ROS 2 description package for the H3L-S hand. It contains independent left-
+ROS 2 description package for the OmniHand 3 Lite S (H3L-S) hand. It contains independent left-
 and right-hand URDF models and meshes, joint-name references and an RViz2
 display launch file.
 
