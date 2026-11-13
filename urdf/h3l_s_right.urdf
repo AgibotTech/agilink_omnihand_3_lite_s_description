@@ -2,6 +2,12 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<!--
+  限位声明 / Joint Limit Notice
+  SDK 及 URDF 中的角度限制均为机械限位，电机限位范围以规格书为准。
+  The angle limits specified in the SDK and URDF are mechanical limits.
+  Refer to the product specification for the motor limit ranges.
+-->
 <robot
   name="h3l_s_right">
   <link
